@@ -7,7 +7,7 @@
   <% if(locals.convidados) { %>
   <ul>
     <% for(let convidado of convidados) { %>
-    <li><%= convidado.nome %></li>
+    <li><%= convidado.nome %><%= convidado.vip ? ' [VIP]' : '' %></li>
     <% } %>
   </ul>
   <% } %>
