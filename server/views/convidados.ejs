@@ -4,6 +4,13 @@
 <main>
   <h1><%= title %></h1>
   <p><%= title %> | Só pra quem pode...</p>
+  <% if(locals.convidados) { %>
+  <ul>
+    <% for(let convidado of convidados) { %>
+    <li><%= convidado.nome %></li>
+    <% } %>
+  </ul>
+  <% } %>
 </main>
 
 <%- include('partials/footer') %>
