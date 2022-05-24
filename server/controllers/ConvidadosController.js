@@ -12,4 +12,8 @@ controller.vip = (req, res) => res.render('convidados', {
   convidados: convidados.filter(convidado => convidado.vip)
 })
 
+controller.add = (req, res) => res.render('adicionar-convidado', {
+  title: 'Adicionar Convidado'
+})
+
 module.exports = controller

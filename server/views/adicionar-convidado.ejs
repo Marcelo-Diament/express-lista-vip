@@ -4,6 +4,23 @@
 <main>
   <h1><%= title %></h1>
   <p><%= title %> | Só pra quem pode...</p>
+
+  <form action="">
+    <div>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Fulano">
+    </div>
+    <div>
+      <label for="quantidade">quantidade</label>
+      <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="15" step="1">
+    </div>
+    <div>
+      <input type="checkbox" name="vip" id="vip">
+      <label for="vip">VIP</label>
+    </div>
+    <button>Adicionar Convidado</button>
+  </form>
+
 </main>
 
 <%- include('partials/footer') %>
