@@ -1,0 +1,20 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main>
+  <h1><%= title %></h1>
+  <p><%= title %> | Só pra quem pode...</p>
+
+  <% if(locals.convidado) { %>
+  <h2><%= convidado.nome %></h2>
+
+  <% if( convidado.vip ) { %>
+  <small><b>VIP</b></small>
+  <% } %>
+
+  <p>Quantidade: <%= convidado.quantidade %> pessoas</p>
+  <% } %>
+
+</main>
+
+<%- include('partials/footer') %>

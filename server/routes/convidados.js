@@ -6,5 +6,6 @@ router.get('/', controller.index);
 router.get('/vip', controller.vip);
 router.get('/adicionar', controller.add);
 router.post('/adicionar', controller.create);
+router.get('/:id', controller.show);
 
 module.exports = router;
