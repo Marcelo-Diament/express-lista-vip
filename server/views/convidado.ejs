@@ -4,13 +4,17 @@
 <main>
   <h1><%= title %></h1>
   <p><%= title %> | Só pra quem pode...</p>
-  <% if(locals.convidados) { %>
-  <ul>
-    <% for(let convidado of convidados) { %>
-    <li><%= convidado.nome %><%= convidado.vip ? ' [VIP]' : '' %></li>
-    <% } %>
-  </ul>
+
+  <% if(locals.convidado) { %>
+  <h2><%= convidado.nome %></h2>
+
+  <% if( convidado.vip ) { %>
+  <small><b>VIP</b></small>
   <% } %>
+
+  <p>Quantidade: <%= convidado.quantidade %> pessoas</p>
+  <% } %>
+
 </main>
 
 <%- include('partials/footer') %>
