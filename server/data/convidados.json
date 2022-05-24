@@ -46,5 +46,17 @@
     "nome": "Thiagão",
     "quantidade": 1,
     "vip": false
+  },
+  {
+    "id": 9,
+    "nome": "Aline Marques",
+    "quantidade": 2,
+    "vip": true
+  },
+  {
+    "id": 10,
+    "nome": "Bruno Sabio",
+    "quantidade": 4,
+    "vip": true
   }
 ]
